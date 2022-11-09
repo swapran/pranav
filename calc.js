@@ -29,5 +29,19 @@ function calcu(){
     {
         res = num1 / num2;
     }
+    if(ops_val=="perc")
+    {
+        res = num1 * (num2/100);
+    }
+    if(ops_val=="rem")
+    {
+        res = num1 % num2;
+    }
+    if(ops_val=="pov")
+    {
+        res=1;
+        for(let i=0;i<num2;i++)
+            res = res*num1;
+    }
     document.getElementById("res").innerText="Result: "+res;
 }
