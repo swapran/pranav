@@ -40,8 +40,9 @@ function calcu(){
     if(ops_val=="pov")
     {
         res=1;
-        for(let i=0;i<num2;i++)
-            res = res*num1;
+        for(let i=0;i<num2;i++){
+            res = res * num1;
+        }
     }
     document.getElementById("res").innerText="Result: "+res;
 }
