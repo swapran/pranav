@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <h2>Enter two numbers</h2>
+    <input type="text" id="num1">
+    <input type="text" id="num2">
+    <div>
+        <h3>Select operation</h3>
+        <input type="radio" id="add" name="cal" value="add" ><label for="add">Addition</label><br>
+        <input type="radio" id="sub" name="cal" value="sub"><label for="sub">Substraction</label><br>
+        <input type="radio" id="mul" name="cal" value="mul"><label for="mul">Multiplication</label><br>
+        <input type="radio" id="div" name="cal" value="div"><label for="div">Division</label><br>
+    </div>
+    <br><button type="button" onclick="calcu()">Calculate</button>
+    <div id="res"></div>
+    <script src="./calc.js"></script>
+</body>
+</html>
